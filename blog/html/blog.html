@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../../css/icomoon.css" />
+  </head>
+  <body>
+    <section id="blog-section" class="rajat-blog" data-section="blog">
+      <div class="blog-page">
+        <div class="container-wrap">
+          <!-- Start -->
+          <div class="blog-header">
+            <div class="back-to-blog">
+              <a
+                href="../../index.html#blog-section"
+                class="back-button"
+                onclick="scrollToBlog()"
+              >
+                <i class="icon-arrow-left3"></i>
+              </a>
+            </div>
+            <div class="more-button-container">
+              <button class="more-button">
+                <i class="icon-ellipsis"></i>
+              </button>
+              <!-- Dropdown options for More -->
+              <div class="dropdown-content">
+                <a href="#">Share</a>
+                <a href="#">Comment</a>
+                <a href="#">Bookmark</a>
+                <a href="#">Report</a>
+              </div>
+            </div>
+          </div>
+          <div class="rajat-narrow-content">
+            <div class="main-70per">
+              <div class="div-blog-image">
+                <img
+                  class="blog-img"
+                  src="../Images/how-i-became-ui-ux-and-developer.jpg"
+                  alt="blog-image"
+                  draggable="false"
+                  oncontextmenu="return false"
+                />
+              </div>
+              <h2 class="blog-title">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Assumenda, sequi! In expedita dolorem eos praesentium distinctio
+                dolore numquam aperiam quaerat repellat cupiditate molestias
+                sit, similique, modi quam rerum omnis natus!
+              </h2>
+              <div class="desc">
+                <span>
+                  <small class="blog-date"
+                    ><i class="icon-calendar3"></i> Aug 21, 2025</small
+                  >
+                  | <small class="blog-category"> Personal </small> |
+                  <small class="blog-time-it-take"
+                    ><i class="icon-clock3"></i> 7 mins</small
+                  >
+                </span>
+                <button class="like-btn" onclick="toggleLike(this)">
+                  <i class="icon-heart-outline"></i>
+                  <!-- Animation container -->
+                  <div class="like-btn-svg"></div>
+                </button>
+
+                <!-- Overlay Message -->
+                <div class="popup" id="popup">
+                  <div class="popup-message" id="popup-message"></div>
+                </div>
+              </div>
+              <p class="blog-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                voluptates animi quae corrupti et culpa tempore omnis iste,
+                deleniti repellat sed ut nihil ipsa. Accusamus nobis ratione
+                libero reprehenderit magni. Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Distinctio, ullam, nisi sed et
+                excepturi sequi neque, ratione odit quos qui itaque corrupti
+                fuga nam iure aut animi deleniti eius aliquam! Nesciunt alias
+                esse quisquam ipsum asperiores incidunt aspernatur magni optio?
+                Rerum tempora optio nobis voluptatem quo cum quos. Cum delectus
+                atque repudiandae corporis qui tenetur reiciendis debitis
+                mollitia, voluptatum commodi. Impedit voluptatum obcaecati unde
+                nihil assumenda hic veniam deserunt nemo quaerat, magni,
+                necessitatibus eos! Fugiat doloremque voluptatibus beatae quod
+                consectetur suscipit praesentium itaque ullam consequuntur
+                debitis, eligendi aperiam vitae ipsum. Facere perspiciatis, iure
+                excepturi dicta nesciunt perferendis? Eligendi itaque eaque
+                laborum iure neque quisquam, veritatis sit eum consequatur
+                soluta modi ipsam numquam totam assumenda beatae, eos atque et
+                dicta cumque. Rerum blanditiis vel obcaecati iusto ratione
+                veritatis recusandae perferendis quia ab magni corrupti suscipit
+                saepe, reiciendis pariatur facilis consequatur beatae sunt sit
+                illum possimus? Necessitatibus sapiente nisi dolorum veniam
+                voluptatum? Numquam, cumque. Enim harum nihil similique voluptas
+                asperiores magnam saepe vitae autem, culpa odit itaque fuga
+                repellat doloremque, excepturi expedita inventore totam commodi
+                necessitatibus! Unde error sint eius repellat magni.
+              </p>
+            </div>
+
+            <div class="main-30per">
+              <!-- 1 -->
+              <div class="sub-blog">
+                <div class="main-side-pannel">
+                  <div class="img-30per">
+                    <img
+                      class="image-sub"
+                      src="../Images/the-power-of-ui-ux.jpg"
+                      alt="blog-img"
+                      draggable="false"
+                      oncontextmenu="return false"
+                    />
+                  </div>
+                  <div class="title-time">
+                    <h3 class="title-sub">
+                      Lorem ipsum dolor Lorem ipsum dolor sit ipsum dolLorem
+                      ipsum dolor sit ipsum dolLorem ipsum dolor sit ipsum
+                      dolsit ipsum dol
+                    </h3>
+                    <div class="blog-time-it-take">
+                      <i class="icon-clock3"></i> 7 mins
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2 -->
+            </div>
+            <!-- end -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../JS/blog.js"></script>
+  </body>
+</html>

@@ -1,0 +1,324 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../../fonts/icomoon/icomoon.eot?srf3rx');
+  src: url('../../fonts/icomoon/icomoon.eot?x7y5rk#iefix')
+      format('embedded-opentype'),
+    url('../../fonts/icomoon/icomoon.woff2?x7y5rk') format('woff2'),
+    url('../../fonts/icomoon/icomoon.woff?x7y5rk') format('woff'),
+    url('../../fonts/icomoon/icomoon.ttf?x7y5rk') format('truetype'),
+    url('../../fonts/icomoon/icomoon.svg?x7y5rk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  justify-content: center;
+  font-family: 'Poppins', serif;
+}
+
+.blog-page {
+  width: 100%;
+  position: relative;
+}
+
+.container-wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.rajat-narrow-content {
+  padding: 0 0 0 1em;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .rajat-narrow-content {
+    padding: 0;
+  }
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 0px;
+  margin-bottom: 20px;
+}
+
+.blog-header .back-button {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* More Button Container (Right Side) */
+.more-button-container {
+  position: relative;
+}
+
+.icon-ellipsis {
+  display: inline-block;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+}
+
+/* More Button */
+.more-button {
+  font-size: 16px;
+  color: #333;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.more-button i {
+  margin-left: 8px;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.more-button-container:hover .dropdown-content {
+  display: block;
+}
+
+.main-70per {
+  width: 65%;
+  padding-right: 20px;
+  border-right: 1px solid rgb(211, 211, 211);
+}
+
+/* Blog Image */
+.div-blog-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.blog-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(151, 151, 151, 0.17);
+}
+
+/* Title */
+
+.blog-title {
+  width: 100%;
+  color: #222222;
+  font-family: 'Poppins', serif;
+  font-size: 20px;
+  font-weight: 420;
+  margin-bottom: 20px;
+}
+
+/* Desc */
+.desc {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.desc span {
+  width: 90%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 18px;
+  color: #868686;
+  gap: 5%;
+}
+
+.desc button {
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.icon-heart-outline {
+  color: #868686;
+}
+
+.icon-heart {
+  color: #3399cc;
+}
+
+/* pop up */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  z-index: 1000;
+  text-align: center;
+}
+
+.popup.active {
+  display: block;
+}
+
+.blog-date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.blog-category {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.blog-time-it-take {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* description */
+
+.blog-description {
+  width: 100%;
+  font-family: 'Metrophobic', serif;
+  font-size: 16px;
+  line-height: 1.5;
+  word-spacing: 1.5px;
+}
+
+.main-30per {
+  display: block;
+  width: 30%;
+  padding-left: 20px;
+}
+
+.sub-blog {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(151, 151, 151, 0.17);
+  margin-bottom: 20px;
+}
+
+.main-side-pannel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.img-30per {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: auto;
+  padding: 10px;
+}
+
+.image-sub {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(151, 151, 151, 0.17);
+}
+
+.title-time {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 20px;
+}
+
+.title-time .blog-time-it-take {
+  font-size: 14px;
+  color: #868686;
+}
+
+.title-sub {
+  font-size: 14px;
+  font-weight: 500;
+  color: #222222;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to two lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis (...) if title overflows */
+  max-width: 100%;
+  line-height: 1.5em;
+  cursor: pointer; /* Make it look clickable */
+  position: relative; /* To allow the tooltip position */
+}
+
+/* Hover effect for title */
+.title-sub:hover {
+  overflow: visible;
+  white-space: normal; /* Allow text to break on hover */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Optional: background color change on hover */
+  color: white; /* Change text color on hover */
+  padding: 10px; /* Optional: space around the text on hover */
+  max-width: 100%; /* Ensure title doesn't overflow */
+  z-index: 1; /* Ensure title stays above other elements */
+}
+
+/* Tooltip effect to show the full title */
+.title-sub:hover::after {
+  content: attr(data-title); /* Pull full title from data-title attribute */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: normal;
+  max-width: 200px; /* Optional: control the tooltip width */
+  z-index: 9999; /* Ensure tooltip stays above other content */
+}
